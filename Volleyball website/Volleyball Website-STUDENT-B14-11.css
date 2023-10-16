@@ -1,0 +1,292 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;                   /* Default Body and Flex direction */
+    width:100%;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 75px;
+    transform: translate(-50%, -50%);
+    border-width: 5px;
+    text-decoration: underline;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 800;
+    text-underline-offset: 10px;
+}
+
+img {
+    display: flex;
+    height: 50vh;
+    width: 100%;
+}
+
+.navLinks {
+    width: 100%;
+    color: white;                    /* Navigation Links */
+    background-color: black
+}
+
+nav {
+    background-color: black;         /* Navigation background color */
+    color: black;
+}
+
+nav li {
+    background-color: black;
+    float: left;
+    color: white;                    /* Navigation list item */
+    position: relative;
+    flex 1;
+}
+
+nav ul {
+    background-color: black;
+    list-style-type: none;
+    margin 0;
+    padding 0;                       /* Navigation unordered list */
+    overflow: hidden;
+    color: white;
+    flex 1;
+}
+
+nav li a {
+    background-color: black;
+    display: block;
+    color: white;
+    padding: 15px 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    flex: 1;                         /* Navigation Links */
+    flex-direction: column;
+    min-width: 120px;
+    justify-content: space-around;
+    font-family: sans-serif;
+    font-weight: 550;
+    line-height: 30px;
+}
+
+nav a:hover::before {
+    margin-left: -35px;             /* Navigation animation hover before */
+    width: 100%;             
+}
+
+nav a::before {
+    text-align: center;
+    transition: all ease-in-out 350ms;
+    content: "";
+    display: flex;
+    height: 6px;                    /* Animation When hovering over link (navigation) */
+    width: 0%;
+    background-color:white;
+    position: absolute;
+    top: 0;
+}
+
+main {
+    display:flex; 
+    height: 20%                 /* Main Page size heght */
+    flex-direction: column;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: white;
+    height: 58vh;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height:58vh;
+}
+
+aside p {
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 500px) {
+    aside p {
+        font-size 12px;
+    }
+}
+
+footer {
+    background: black;
+    height: 55vh;
+    color: white;
+    display: block;
+}
+
+footer p {
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+}
+
+nav, footer, article {
+    padding: 1.5em;             /* padding for navigation, footer and artcile */
+}
+
+@media only screen and (min-width: 1000px) {
+    main {
+        flex-direction: row; 
+    }
+}
+
+body {
+    background-color: white;
+}
+
+p {
+    color: black;
+    letter-spacing 1px;
+    text-align: center;
+}
+
+h3.solid {
+    border-width: 5px;
+    color: black;
+    text-decoration: overline underline;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 800;
+    line-height: 10px;
+    font-size: 24px;
+    text-underline-offset: 6px;
+}
+    
+@media only screen and (min-width 400px) {
+    h3.solid {
+        font-size: 24px;
+    }
+}
+
+h4 {
+    font-size: 15px;
+    color: black;
+    font-family: sans-serif;
+    width: 60%;
+    font-weight: 400;
+    padding: 5px;
+}
+
+@media only screen and max-width: 400px {
+    h4 {
+        font-size: 13px;
+    }
+}
+
+p.solid {border-style: solid;}
+
+p.solid {
+    border-color: black;
+    width: 50%;
+    font-size: 17px;
+    padding 2px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+@media only screen and (max-width: 375px) {
+    article {
+        height: 64vh;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    article {
+        height: 64vh;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    footer {
+        height: 50vh;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    p.solid {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    aside {
+        height: 40vh;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    nav li a {
+        font-size: 13px;
+        min-width: 190px;
+    }
+}
+
+@media only screen and (min-width: 1551px) {
+    nav li a {
+        font-size: 20px;
+    }
+}
+
+.LinksLeft {
+    font-size: 15px; 
+    float:left;
+}
+
+.LinksRight {
+    float: right;                   /* Links underneath the Links Heading */
+    font-size: 15px;
+}
+            
+@media only screen and (max-width: 350px) {
+    .LinksRight{
+        float: right;
+        font-size: 2px;
+    }
+}
+            
+@media only screen and (max-width: 350px) {
+    .LinksLeft {
+        float: left;
+        font-size: 2px;
+    }
+}
+            
+@media only screen and (max-width:280px) {
+    .LinksRight {
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 915px) {
+    main {
+        height: 100%;
+    }
+}
+    
+a {
+    font-family:cursive, sans-serif;
+    font-size: 15px;                   /* Links underneath The Links Heading */
+    color: black;
+    padding: 5px;
+}

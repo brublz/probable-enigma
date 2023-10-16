@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="utf-8"> 
+        <title>Volleyball Website</title> 
+        <link type="text/css" href="static/index.css"> 
+        <meta name="Volleyball website" content="This website goes through the techniques used in Volleyball, Warmup and exercises you can do before a game and positions / positioning (where you should be)"> 
+        <meta name="Volleyball, Volleyball Techniques, Volleyball positioning, Volleyball Warmup, Volleyball Exercises" content="Volleyball Techniques, Positioning, Warmup / Exercises and Rules & Equipment"> 
+        <meta name="Cameron Hills" content="Cameron Hills"> 
+        <link href="Volleyball%20Website.css" rel="stylesheet" type="text/css"/>
+    </head> 
+    <body> 
+      <header>
+         <div class="navLinks">
+            <nav>
+               <ul>
+                  <li class="FirstLi"><a href="Volleyball%20Website.html"> Home page </a></li>
+                  <li class ="SecondLi"><a href="FlexboxLinks.html"> Techniques </a></li>
+                  <li class="ThirdLi"><a href="FlexboxHouseDev.html"> Positioning </a></li>
+                  <li class="FourthLi"><a href=https://www.bayfield-high.school.nz target="_blank"> Warmup / Exercises </a></li>
+                  <li class="secondLi"><a href=https://kamar.bayfield-high.school.nz/index.php target="_blank"> Rules & Equipment </a></li>
+               </ul>
+            </nav>
+         </div>
+         <div class="container">
+            <img src ="website_header_2022_04_15_SAILIGAMALOSI%20(225).jpg" width="100%;">
+             <div class="centered">Volleyball</div>
+         </div>
+      </header>
+      <main>
+         <article>
+            <h3 class="solid">What is Volleyball?</h3>
+            <h4>Volleyball is good!</h4>
+         </article>
+      </main>
+        <aside>
+            <p> runrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrunrun<br> <h3> HELP!</h3> </p>
+        </aside>
+      <footer>
+         <p class="solid">Volleyball Home Page</p>
+      </footer>
+<script>
+   var slideIndex = 1;
+   showSlides(slideIndex);
+   
+   function plusSlides(n) {
+   showSlides(slideIndex += n);
+   }
+   
+   function currentSlide(n) {
+   showSlides(slideIndex = n);
+   }
+   
+   function showSlides(n) {
+   var i;
+   var slides = document.getElementsByClassName("mySlides");
+   var dots = document.getElementsByClassName("dot");
+   if (n > slides.length) {slideIndex = 1}    
+   if (n < 1) {slideIndex = slides.length}
+   for (i = 0; i < slides.length; i++) {
+     slides[i].style.display = "none";  
+   }
+   for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" active", "");
+   }
+   slides[slideIndex-1].style.display = "block";  
+   dots[slideIndex-1].className += " active";
+   }
+</script>
+</body>
+</html>
