@@ -466,6 +466,7 @@ a {
 .copyright-text
 {
   margin:0;
+  text-align: center;
 }
 @media (max-width:991px)
 {
